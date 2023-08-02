@@ -27,7 +27,7 @@ const Contact = () => {
     style={{ backgroundImage: `url(${contact})` }}
   >
     <div className="contact-us">
-      <h1>Contact Us</h1>
+      <h1>Contactt Us</h1>
       <div className="contact-info">
         <div className="contact-info-item">
           <FaPhone className="icon" />

@@ -1,0 +1,130 @@
+/* Review.css */
+
+.review-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .review {
+    border: 3px solid #191818;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .review h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .review p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .review-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review:hover {
+    /* On hover, apply the pop-up effect by scaling the element */
+    transform: scale(1.1);
+    z-index: 1; /* Increase the z-index to bring the element to the front */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    background-color: hwb(192 4% 69%);
+    color: #f7f4f4;
+  }
+
+  .add-review-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .add-review-button:hover {
+    background-color: #555;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(210, 201, 201, 0.5);
+  }
+  
+  .add-review-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .review-actions button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .review-actions button:hover {
+    color: #f4f6f8; /* Change the color on hover to make it more interactive */
+  }

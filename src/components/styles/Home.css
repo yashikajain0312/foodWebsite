@@ -1,0 +1,41 @@
+/* Home.css */
+.home-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+}
+
+.featured-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.featured-item {
+    border: 3px solid #ddd;
+    padding: 16px;
+    position: relative; /* Add this to enable absolute positioning for child elements */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .featured-item:hover {
+    /* On hover, apply the pop-up effect by scaling the element */
+    transform: scale(1.1);
+    z-index: 1; /* Increase the z-index to bring the element to the front */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    background-color: #ec742f;
+  }
+
+.food-image {
+    width: 100%; /* Adjust the width as needed */
+    max-height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    margin-bottom: 20px; /* Add some margin below the image */
+  }
+
+  .text {
+    color: white;
+  }

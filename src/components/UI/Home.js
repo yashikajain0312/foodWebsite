@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="home-container" style={{ backgroundImage: `url(${foodImage})` }}>
     <div className="home">
-      <h1 className='text'>Welcome to Food App!</h1>
+      <h1 className='text'>Welcome to Food App!!</h1>
       <p className='text'>Explore our delicious menu and place your order online.</p>
       <h2 className='text'>Featured Items</h2>
       <div className="featured-items">
